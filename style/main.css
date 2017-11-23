@@ -1,3 +1,13 @@
 .container h1 {
-  color: red;
+  color: #6e2f32;
 }
+
+.form select {
+  background: #faf6f1;
+  height: 29px;
+  overflow: hidden;
+  width: 240px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+} 
