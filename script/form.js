@@ -6,6 +6,14 @@ $(function(){
     $.getJSON("/data/data.json", function(data){
       var html = [];
       html.push(
+        "<table>"+
+           "<tr>"+
+               "<th>Speciality</th>"+
+               "<th>First name</th>"+
+               "<th>lastname</th>"+
+               "<th>city</th>"+
+           "</tr>"+
+        "</table>"+
         "<table>"
       );
       /* loop through array */
