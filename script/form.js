@@ -19,13 +19,19 @@ $(function(){
         if (d.specialty==document.getElementById("specialty").value || document.getElementById("specialty").value=="empty") {
           if(d.first_name.indexOf(document.getElementById("firstname").value) !== -1)
           {
-            html.push(
-                 "<tr>"+
-                    "<td>" + d.specialty + "</td>"+
-                     "<td>" + d.first_name + "</td>"+
-                     "<td>" + d.last_name + "</td>"+
-                     "<td>" + d.city + "</td>"+
-                "</tr>");
+            if(d.last_name.indexOf(document.getElementById("lastname").value) !== -1)
+            {
+              if(d.city.indexOf(document.getElementById("city").value) !== -1)
+              {
+                html.push(
+                     "<tr>"+
+                        "<td>" + d.specialty + "</td>"+
+                         "<td>" + d.first_name + "</td>"+
+                         "<td>" + d.last_name + "</td>"+
+                         "<td>" + d.city + "</td>"+
+                    "</tr>");
+              }
+            }
           }
         }
       });
