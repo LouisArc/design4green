@@ -1,5 +1,6 @@
 $(function(){
   $("#submit").click(function(){
+    console.log("test")
     /* set no cache */
     $.ajaxSetup({ cache: false });
 
