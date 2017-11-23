@@ -12,9 +12,7 @@ $(function(){
                "<th>First name</th>"+
                "<th>lastname</th>"+
                "<th>city</th>"+
-           "</tr>"+
-        "</table>"+
-        "<table>"
+           "</tr>"
       );
       /* loop through array */
       $.each(data, function(index, d){
