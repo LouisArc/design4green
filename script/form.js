@@ -3,11 +3,7 @@ $(function(){
     /* set no cache */
     $.ajaxSetup({ cache: false });
 
-    $.getJSON("/data/data.json",
-     {
-        specialty: document.getElementById("specialty").value
-     },
-     , function(data){
+    $.getJSON("/data/data.json", function(data){
       var html = [];
       html.push(
         "<table>"+
@@ -20,6 +16,7 @@ $(function(){
       );
       /* loop through array */
       $.each(data, function(index, d){
+        if (d.specialty==document.getElementById("specialty").value || document.getElementById("specialty").value=="empty") {
         html.push(
              "<tr>"+
                 "<td>" + d.specialty + "</td>"+
@@ -27,6 +24,7 @@ $(function(){
                  "<td>" + d.last_name + "</td>"+
                  "<td>" + d.city + "</td>"+
             "</tr>");
+        }
       });
       html.push(
         "</table>"
