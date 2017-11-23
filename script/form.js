@@ -4,7 +4,5 @@ $('#submit').click(function () {
         $('#r').append('<p><b>Name</b> : ' + data.first_name + '</p>');
         $('#r').append('<p><b>Surname</b> : ' + data.last_name + '</p>');
         $('#r').append('<p><b>City</b> : ' + data.city + '</p>');
-      });
-    });
   });
 });
