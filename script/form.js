@@ -16,7 +16,7 @@ $(function(){
       );
       /* loop through array */
       $.each(data, function(index, d){
-        if (d.specialty==document.getElementById("specialty").value) {
+        if (d.specialty==document.getElementById("specialty").value || document.getElementById("specialty").value=="empty") {
         html.push(
              "<tr>"+
                 "<td>" + d.specialty + "</td>"+
