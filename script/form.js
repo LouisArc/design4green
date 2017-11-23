@@ -2,6 +2,10 @@ $(function(){
   $("#submit").click(loadData);
 });
 
+$(function(){
+  $("#specialty").change(loadData);
+});
+
 function loadData(){
   /* set no cache */
   $.ajaxSetup({ cache: false });
