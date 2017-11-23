@@ -1,6 +1,5 @@
 $(function(){
   $("#submit").click(function(){
-    console.log(document.getElementById("specialty").value);
     /* set no cache */
     $.ajaxSetup({ cache: false });
 
@@ -17,7 +16,7 @@ $(function(){
       );
       /* loop through array */
       $.each(data, function(index, d){
-        console.log(d.specialty);
+        if (d.specialty==document.getElementById("specialty").value) {
         html.push(
              "<tr>"+
                 "<td>" + d.specialty + "</td>"+
@@ -25,6 +24,7 @@ $(function(){
                  "<td>" + d.last_name + "</td>"+
                  "<td>" + d.city + "</td>"+
             "</tr>");
+        }
       });
       html.push(
         "</table>"
