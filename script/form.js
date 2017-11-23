@@ -16,7 +16,7 @@ $(function(){
                  "<td>" + d.first_name + "</td>"+
                  "<td>" + d.last_name + "</td>"+
                  "<td>" + d.city + "</td>"+
-            "</tr>"
+            "</tr>");
       });
       html.push(
         "</table>"
