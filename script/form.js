@@ -17,7 +17,7 @@ $(function(){
       );
       /* loop through array */
       $.each(data, function(index, d){
-        console.log(d);
+        console.log(d.specialty);
         html.push(
              "<tr>"+
                 "<td>" + d.specialty + "</td>"+
