@@ -4,6 +4,8 @@ $(function(){
     $.ajaxSetup({ cache: false });
 
     $.getJSON("/data/data.json", function(data){
+      dump($_POST);
+      dump($_GET);
       var html = [];
       html.push(
         "<table>"+
@@ -27,7 +29,7 @@ $(function(){
       html.push(
         "</table>"
       );
-      $("#r").html(html.join('')).css("background-color", "orange");
+      $("#r").html(html.join(''));
     }).error(function(jqXHR, textStatus, errortdrown){ /* assign handler */
       /* alert(jqXHR.responseText) */
       alert("error occurred!");
