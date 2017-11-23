@@ -1,10 +1,10 @@
 $(function(){
   $("#submit").click(function(){
+    console.log("test");
     /* set no cache */
     $.ajaxSetup({ cache: false });
 
     $.getJSON("/data/data.json", function(data){
-      console.log("test");
       var html = [];
       html.push(
         "<table>"+
