@@ -1,5 +1,4 @@
 $(function(){
-{
   $("#submit").click(function(){
     $("#r").html("submited");
     /* set no cache */
