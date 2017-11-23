@@ -6,6 +6,18 @@ $(function(){
   $("#specialty").change(loadData);
 });
 
+$(function(){
+  $("#firstname").change(loadData);
+});
+
+$(function(){
+  $("#lastname").change(loadData);
+});
+
+$(function(){
+  $("#city").change(loadData);
+});
+
 function loadData(){
   /* set no cache */
   $.ajaxSetup({ cache: false });
