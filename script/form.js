@@ -4,8 +4,6 @@ $(function(){
     $.ajaxSetup({ cache: false });
 
     $.getJSON("/data/data.json", function(data){
-      dump($_POST);
-      dump($_GET);
       var html = [];
       html.push(
         "<table>"+
@@ -17,15 +15,17 @@ $(function(){
            "</tr>"
       );
       /* loop through array */
-      $.each(data, function(index, d){
-        html.push(
-             "<tr>"+
-                "<td>" + d.specialty + "</td>"+
-                 "<td>" + d.first_name + "</td>"+
-                 "<td>" + d.last_name + "</td>"+
-                 "<td>" + d.city + "</td>"+
-            "</tr>");
-      });
+      if (d.specialty==$_GET['specialty']) {
+        $.each(data, function(index, d){
+          html.push(
+               "<tr>"+
+                  "<td>" + d.specialty + "</td>"+
+                   "<td>" + d.first_name + "</td>"+
+                   "<td>" + d.last_name + "</td>"+
+                   "<td>" + d.city + "</td>"+
+              "</tr>");
+        });
+      }
       html.push(
         "</table>"
       );
