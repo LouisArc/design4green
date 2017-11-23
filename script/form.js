@@ -1,3 +1,3 @@
 $('#submit').click(function () {
-  echo("test");
+  console.log("test");
 });
