@@ -17,14 +17,16 @@ $(function(){
       /* loop through array */
       $.each(data, function(index, d){
         if (d.specialty==document.getElementById("specialty").value || document.getElementById("specialty").value=="empty") {
-          if(d.first_name.includes(document.getElementById("first_name").value))
-        html.push(
-             "<tr>"+
-                "<td>" + d.specialty + "</td>"+
-                 "<td>" + d.first_name + "</td>"+
-                 "<td>" + d.last_name + "</td>"+
-                 "<td>" + d.city + "</td>"+
-            "</tr>");
+          if(d.first_name.indexOf(document.getElementById("first_name").value) !== -1))
+          {
+            html.push(
+                 "<tr>"+
+                    "<td>" + d.specialty + "</td>"+
+                     "<td>" + d.first_name + "</td>"+
+                     "<td>" + d.last_name + "</td>"+
+                     "<td>" + d.city + "</td>"+
+                "</tr>");
+          }
         }
       });
       html.push(
