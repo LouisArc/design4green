@@ -4,7 +4,7 @@ $(function(){
     $.ajaxSetup({ cache: false });
 
     $.getJSON("/data/data.json", function(data){
-      console.log("test")
+      console.log("test");
       var html = [];
       html.push(
         "<table>"+
