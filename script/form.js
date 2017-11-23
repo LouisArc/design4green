@@ -11,11 +11,11 @@ $(function(){
       /* loop through array */
       $.each(data, function(index, d){
         html.push(
-             "<tr>"
-                 "<td>" + d.specialty + "</td>"
-                 "<td>" + d.first_name + "</td>"
-                 "<td>" + d.last_name + "</td>"
-                 "<td>" + d.city + "</td>"
+             "<tr>"+
+                "<td>" + d.specialty + "</td>"+
+                 "<td>" + d.first_name + "</td>"+
+                 "<td>" + d.last_name + "</td>"+
+                 "<td>" + d.city + "</td>"+
             "</tr>"
       });
       html.push(
