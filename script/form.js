@@ -7,15 +7,15 @@ $(function(){
 });
 
 $(function(){
-  $("#firstname").change(loadData);
+  $("#firstname").keyup(loadData);
 });
 
 $(function(){
-  $("#lastname").change(loadData);
+  $("#lastname").keyup(loadData);
 });
 
 $(function(){
-  $("#city").change(loadData);
+  $("#city").keyup(loadData);
 });
 
 function loadData(){
