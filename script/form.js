@@ -1,6 +1,6 @@
 $(function(){
   $("#submit").click(function(){
-    console.log(document.getElementById("specialty"));
+    console.log(document.getElementById("specialty").value);
     /* set no cache */
     $.ajaxSetup({ cache: false });
 
