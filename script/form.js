@@ -17,7 +17,7 @@ $(function(){
       /* loop through array */
       $.each(data, function(index, d){
         if (d.specialty==document.getElementById("specialty").value || document.getElementById("specialty").value=="empty") {
-          if(d.first_name.indexOf(document.getElementById("first_name").value) !== -1)
+          if(d.first_name.indexOf(document.getElementById("firstname").value) !== -1)
           {
             html.push(
                  "<tr>"+
