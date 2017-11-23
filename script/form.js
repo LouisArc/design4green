@@ -2,7 +2,7 @@ $(function(){
   $("#submit").click(function(){
     /* set no cache */
     $.ajaxSetup({ cache: false });
-    console.log($_GET);
+    
     $.getJSON("/data/data.json", function(data){
       var html = [];
       html.push(
