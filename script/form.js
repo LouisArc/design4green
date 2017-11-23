@@ -15,7 +15,7 @@ $(function(){
            "</tr>"
       );
       /* loop through array */
-      if (d.specialty==document.getElementById("specialty")) {
+      if (d.specialty==document.getElementById("specialty").value) {
         $.each(data, function(index, d){
           html.push(
                "<tr>"+
